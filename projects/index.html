@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+    
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self';">
+    
+
+    <meta name="author" content="Gabriel Ganzer">
+    <meta name="description" content="DLX &ndash; Microprocessor    This project consisted of developing a small DLX(DELUXE) processor from RTL design using ModelSim, synthesis&amp;optimization with Synopsys Design Vision, down to the physical design using Cadence. The DLX is a fully pipelined RISC processor based on the Harvard Architecture, i.e., it relies on two different memories for instructions and data, allowing simultaneous instruction-fetching and data transactions. The features implemented are listed bellow:
+ Extended Instruction Set: addu, addui, jalr, jr, lb, lbu, lhi, lhu, sb, seq, seqi, sgeu, sgeui, sgt, sgti, sgtu, sgtui, slt, slti, sltu, sltui, sra, srai, subu, subui, mult; Optimized ALU: Pentium4 adder/subtractor, UltraSPARC T2 3-level Shifter, UltraSPARC T2 Logic Unit using 2-level NAND gates, Multi-purpose Comparator, Zero Detector, and a multiplier that combines both Wallace Tree and Booth approaches.">
+    <meta name="keywords" content="embedded-systems,engineer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Projects"/>
+<meta name="twitter:description" content="DLX &ndash; Microprocessor    This project consisted of developing a small DLX(DELUXE) processor from RTL design using ModelSim, synthesis&amp;optimization with Synopsys Design Vision, down to the physical design using Cadence. The DLX is a fully pipelined RISC processor based on the Harvard Architecture, i.e., it relies on two different memories for instructions and data, allowing simultaneous instruction-fetching and data transactions. The features implemented are listed bellow:
+ Extended Instruction Set: addu, addui, jalr, jr, lb, lbu, lhi, lhu, sb, seq, seqi, sgeu, sgeui, sgt, sgti, sgtu, sgtui, slt, slti, sltu, sltui, sra, srai, subu, subui, mult; Optimized ALU: Pentium4 adder/subtractor, UltraSPARC T2 3-level Shifter, UltraSPARC T2 Logic Unit using 2-level NAND gates, Multi-purpose Comparator, Zero Detector, and a multiplier that combines both Wallace Tree and Booth approaches."/>
+
+    <meta property="og:title" content="Projects" />
+<meta property="og:description" content="DLX &ndash; Microprocessor    This project consisted of developing a small DLX(DELUXE) processor from RTL design using ModelSim, synthesis&amp;optimization with Synopsys Design Vision, down to the physical design using Cadence. The DLX is a fully pipelined RISC processor based on the Harvard Architecture, i.e., it relies on two different memories for instructions and data, allowing simultaneous instruction-fetching and data transactions. The features implemented are listed bellow:
+ Extended Instruction Set: addu, addui, jalr, jr, lb, lbu, lhi, lhu, sb, seq, seqi, sgeu, sgeui, sgt, sgti, sgtu, sgtui, slt, slti, sltu, sltui, sra, srai, subu, subui, mult; Optimized ALU: Pentium4 adder/subtractor, UltraSPARC T2 3-level Shifter, UltraSPARC T2 Logic Unit using 2-level NAND gates, Multi-purpose Comparator, Zero Detector, and a multiplier that combines both Wallace Tree and Booth approaches." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gabrielganzer.github.io/projects/" /><meta property="article:section" content="" />
+
+
+
+
+
+    <title>
+  Projects · Gabriel Ganzer
+</title>
+
+    
+      <link rel="canonical" href="https://gabrielganzer.github.io/projects/">
+    
+
+    
+    
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" integrity="sha256-hEIt6X6xzye8ubyk8/uxjz68cRZHsJxoKS9fQ8idUGQ=" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.abe8b6775d85a01169c10329309df501aa8a008ab354002f7858f077cae76020.css" integrity="sha256-q&#43;i2d12FoBFpwQMpMJ31AaqKAIqzVAAveFjwd8rnYCA=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.81.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Gabriel Ganzer
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/education/">Education</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/experience/">Experience</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/volunteering/">Volunteering</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/publications/">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://gabrielganzer.github.io/projects/">
+          Projects
+        </a>
+      </h1>
+    </header>
+
+    <h2 id="dlx----microprocessorhttpsgithubcomgabrielganzerdlx-microprocessor">
+  <a href="https://github.com/gabrielganzer/DLX-Microprocessor">DLX &ndash; Microprocessor</a>
+  <a class="heading-link" href="#dlx----microprocessorhttpsgithubcomgabrielganzerdlx-microprocessor">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/datapath.png" alt="DLX" title="DLX Micropricessor Pipeline"></p>
+<p>This project consisted of developing a small DLX(DELUXE) processor from RTL design using ModelSim, synthesis&amp;optimization with Synopsys Design Vision, down to the physical design using Cadence. The DLX is a fully pipelined RISC processor based on the Harvard Architecture, i.e., it relies on two different memories for instructions and data, allowing simultaneous instruction-fetching and data transactions. The features implemented are listed bellow:</p>
+<ul>
+<li><strong>Extended Instruction Set</strong>: addu, addui, jalr, jr, lb, lbu, lhi, lhu, sb, seq, seqi, sgeu, sgeui,
+sgt, sgti, sgtu, sgtui, slt, slti, sltu, sltui, sra, srai, subu, subui, mult;</li>
+<li><strong>Optimized ALU</strong>: Pentium4 adder/subtractor, UltraSPARC T2 3-level Shifter, UltraSPARC
+T2 Logic Unit using 2-level NAND gates, Multi-purpose Comparator, Zero Detector, and a
+multiplier that combines both Wallace Tree and Booth approaches. Power optimization was
+achieved by reducing switching activity through state assignment of all blocks;</li>
+<li><strong>Forwarding Unit</strong>: data hazard control;</li>
+<li><strong>Clock-Gating</strong>: Register File and Generic Registers gated for power optimization;</li>
+</ul>
+<h2 id="rtsnoc----snifferhttpsgithubcomgabrielganzerrtsnoc-sniffer">
+  <a href="https://github.com/gabrielganzer/RTSNoC-Sniffer">RTSNoC &ndash; Sniffer</a>
+  <a class="heading-link" href="#rtsnoc----snifferhttpsgithubcomgabrielganzerrtsnoc-sniffer">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/sniffer.png" alt="Sniffer" title="RTSNoC Internal Structure"></p>
+<p>Design and evaluation of a non-intrusive packet delivery monitoring service on a Network-on-Chip (NoC) that focus on real-time Systems-on-Chip (SoC). Recent works show that using adaptive routing or optimization techniques are solutions to improve its latency. These strategies usually need to know the traffic behaviour previously to make changes. A monitoring service is indicated as a solution to this issue, but since silicon consumption is a restriction in these projects, most of them use routers or other NoC&rsquo;s resources to perform such task. This design was based on a strategy that does not interfere with the NoC operation to collect and to evaluate traffic information.</p>
+<h2 id="rtl----power-optimizationhttpsgithubcomgabrielganzerrtl-poweroptimization">
+  <a href="https://github.com/gabrielganzer/RTL-PowerOptimization">RTL &ndash; Power Optimization</a>
+  <a class="heading-link" href="#rtl----power-optimizationhttpsgithubcomgabrielganzerrtl-poweroptimization">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/c1908.png" alt="c1908" title="Benchmark Circuit c1908 used in the experiments."></p>
+<p>This project consisted of implementing a command for PrimeTime (Synopsys Design Vision) that implements a post-synthesis power minimization procedure. The new command, written in TCL, runs a leakage-constrained dual-Vth cell assignment with gate re-sizing. The constraint function to be minimized is:<br>
+<strong>savings = (start_power - end_power)/start_power</strong><br>
+First, all cells are sorted from higher to lower slack.</p>
+<ul>
+<li>If a cell is of HVT type (lower leakage) it tries to reduce the size to its minimum, then:
+<ul>
+<li>If the global slack is negative after the change, it undoes that change;</li>
+<li>Else it tries to resize with the next entry in the alternative library list (sorted from lower to higher size) that is smaller than the current cell size, exiting if the current size is already the minimum that can be applied;</li>
+</ul>
+</li>
+<li>If a cell is of LVT type (higher leakage) first it tries to swap into HVT, then:
+<ul>
+<li>If swapping was successful (positive global slack after swapping) then it tries to reduce the size;</li>
+<li>Otherwise, the cell is maintained as LVT and the script tries to reduce its size.</li>
+</ul>
+</li>
+<li>Then the script controls if the input saving was reached:
+<ul>
+<li>If the saving was not reached in the previous phase that results in a positive slack, the script proceeds with the swapping of all LVT cells into HVT keeping the slack as great as possible.
+In case the input savings is equal to exactly 1 the script does not perform any kind of control over the end power and runs until the maximum optimization is reached.</li>
+</ul>
+</li>
+</ul>
+<h2 id="soc----vaccine-refrigeratorhttpsgithubcomgabrielganzersoc-vaccinerefrigerator">
+  <a href="https://github.com/gabrielganzer/SoC-VaccineRefrigerator">SoC &ndash; Vaccine Refrigerator</a>
+  <a class="heading-link" href="#soc----vaccine-refrigeratorhttpsgithubcomgabrielganzersoc-vaccinerefrigerator">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/vare.png" alt="vare" title="Initial screen."></p>
+<p>Vaccination is a safe and effective way to prevent disease and save lives. Due to their composition, many vaccines must be stored at stable low temperatures after manufacture to avoid degradation. This can be a particular challenge in developing countries with rudimentary health care systems. For this reason, we present VARE, a low-cost vaccine refrigeration system that can be used to adapt a domestic fridge into aspecialized medical one</p>
+<p>VARE is composed of the followings components:</p>
+<ul>
+<li><em>UART2</em> for displaying messages to the user;</li>
+<li><em>DMA</em> to manage data transfers;</li>
+<li><em>TIMER2</em> to count the amount of time the door is open;</li>
+<li><em>I2C1</em> serial communication with temperature sensors;</li>
+<li><em>GPIO</em> for digital I/O signals.</li>
+</ul>
+<h2 id="nxp----tunablelamphttpsgithubcomgabrielganzernxp-tunablelamp">
+  <a href="https://github.com/gabrielganzer/NXP-TunableLamp">NXP &ndash; TunableLamp</a>
+  <a class="heading-link" href="#nxp----tunablelamphttpsgithubcomgabrielganzernxp-tunablelamp">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/s32k144.jpeg" alt="S32K144" title="S32K144 Evaluation Board"></p>
+<p>This project was implemented using a S32K144 evaluation board running the Micrium µC/OS3 operating system. Features covered by the implementation:</p>
+<ol>
+<li>The S32K144 RGB led simulating the lamp;</li>
+<li>The S32K144 potentiometer for varying the lamp intensity;</li>
+<li>The S32K144 SW2 and SW3 as input buttons for changing the lamp color;
+The lamp operates as follows:</li>
+<li>At the start-up the RED color is selected, with an intensity proportional to the potentiometer position. When the potentiometer output is 0V, the RGB is activated by a 10 KHz PWM signal with 0% duty cycle (i.e., the led is always OFF); when the potentiometer output is 5V, the RGB is activated by a 10 KHz PWM signal with 100% duty cycle (i.e., the led is always ON). When the potentiometer output is between 0V and 5V, the RGB is activated by a 10 KHz PWM signal whose duty cycle is proportional to the potentiometer output;</li>
+<li>Each time SW2 is pressed, the selected color is changed. The sequence in RED -&gt; GREEN -&gt; BLUE- &gt; RED.</li>
+<li>Each time SW3 is pressed, the selected color is changed. The sequence is RED -&gt; BLUE -&gt; GREEN -&gt; RED.</li>
+<li>If any of the button (SW2/SW3) remains pressed, the color shall not change.</li>
+</ol>
+<h2 id="dpm----dynamic-power-managementhttpsgithubcomgabrielganzeriot-energymanagement">
+  <a href="https://github.com/gabrielganzer/IoT-EnergyManagement">DPM &ndash; Dynamic Power Management</a>
+  <a class="heading-link" href="#dpm----dynamic-power-managementhttpsgithubcomgabrielganzeriot-energymanagement">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/psm.png" alt="PSM" title="PSM"></p>
+<p>This project consisted of applying Dynamic Power Management (DPM) on a series of worloaks by simulating and modifying a Power State Machine (PSM) written in C language. The manager implements two strategies:</p>
+<ul>
+<li>Timeout Policy, that keeps the system in a high power consuming Run state even after activity has ceased, transitioning to a low power state only after a certain threshold is reached, i.e., the timeout value.</li>
+<li>History Policy, that is a predictive policy, i.e., it estimates the time to transition based on the previous workload patterns. The computed value Tpred is compared to the time to Idle and Sleep thresholds. After a decision is taken the system is able to reach any one of the low-power states independently.</li>
+</ul>
+<h2 id="impro----energy-efficient-image-processinghttpsgithubcomgabrielganzeriot-energymanagement">
+  <a href="https://github.com/gabrielganzer/IoT-EnergyManagement">IMPRO &ndash; Energy efficient image processing</a>
+  <a class="heading-link" href="#impro----energy-efficient-image-processinghttpsgithubcomgabrielganzeriot-energymanagement">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/sample.png" alt="IMPRO" title="IMPRO"></p>
+<p>Evaluation of several image transformations used in Organic Light-Emitting Diode (OLED) displays as a mean of reducing power consumption. Compensation techniques are also used in conjunction with Dynamic Voltage Scaling (DVS) for the same goal.</p>
+<h2 id="iot----energy-storage-generation-and-conversionhttpsgithubcomgabrielganzeriot-energymanagement">
+  <a href="https://github.com/gabrielganzer/IoT-EnergyManagement">IoT &ndash; Energy storage, generation and conversion</a>
+  <a class="heading-link" href="#iot----energy-storage-generation-and-conversionhttpsgithubcomgabrielganzeriot-energymanagement">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/iot.png" alt="IoT" title="IoT"></p>
+<p>Simulation of an IoT device in MATLAB/Simulink. The model consisted of a System-on-Chip (SoC) for measuring urban polution, integrating an the following sensors: air quality, methane level, temperature, and noise. A subsequent analysis of its behavior in terms of power perspective and possible optimizations to increase the system lifetime are provided.</p>
+<h2 id="ezgas----software-engineeringhttpsgithubcomgabrielganzerezgas-platform">
+  <a href="https://github.com/gabrielganzer/EZGas-Platform">EZGas &ndash; Software Engineering</a>
+  <a class="heading-link" href="#ezgas----software-engineeringhttpsgithubcomgabrielganzerezgas-platform">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><img src="/images/ezgas.png" alt="EZGas" title="EZGas"></p>
+<p>Final project presented to the Software Engineering 19/20 course at Politecnico di Torino.
+Authors: Marco Bellavia, Gabriel Ganzer, Gianluca Morabito, Francesco Xia.<br>
+Each gas station in Italy is free to define the price of fuels (regular gasoline, premium gasoline, diesel, methane). Drivers are interested in finding as easy as possible the gas station in a specific area of the city, possibly with the cheapest price.<br>
+EZGas is a crowdsourcing service, supported by a web application accessible both via smartphone or PC, that allows users to:</p>
+<ul>
+<li>collect prices of fuels in different gas stations</li>
+<li>locate gas stations in an area, along with the prices they practice.</li>
+</ul>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>gabriel.ganzer@polito.it</p>
+      
+      
+        ©
+        
+          2020 -
+        
+        2021
+         Gabriel Ganzer 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js" integrity="sha256-runIpGTrezU0xxEPfF4WnnA54v2ScQ4GJtRR1nJa8Tc="></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+    
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "token"}'></script>
+
+
+
+    <script type="application/javascript">
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.example.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'ABCDE']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=gid"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'gid');
+</script>
+
+  </body>
+
+</html>

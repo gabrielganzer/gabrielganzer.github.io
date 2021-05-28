@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gabriel Ganzer</title>
+    <link>https://gabrielganzer.github.io/</link>
+    <description>Recent content on Gabriel Ganzer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gabrielganzer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How yoga helped me during the pandemic</title>
+      <link>https://gabrielganzer.github.io/posts/yoga/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabrielganzer.github.io/posts/yoga/</guid>
+      <description>How yoga helped me during the pandemic    </description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https://gabrielganzer.github.io/education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabrielganzer.github.io/education/</guid>
+      <description>Politecnico di Torino
+M.Sc. in Computer Engineering
+2019 &amp;ndash; Present
+EUR-ACE® Accredited program held in English.
+Embedded Systems orientation.
+Universidade Federal de Santa Catarina
+B.Sc. in Computer Engineering
+2012 &amp;ndash; 2018
+Thesis: Packet delivery monitoring service on Networks-on-Chip.
+Design and evaluation of a service for monitoring the delivery of data packets of a Network-on-Chip (NoC) in a non-intrusive architecture, i.e., collecting data traffic without interfering with the routers&#39; operation, subsequently applying optimization techniques to improve latency.</description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>https://gabrielganzer.github.io/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabrielganzer.github.io/experience/</guid>
+      <description>Laboratório de Sistemas Embarcados e Microeletrônica (LSEM)
+Researcher - External Collaboration
+Mar/2020 - Present
+Researched RISC-V architectures, optimization techniques for energy-efficient RTL designs, and fully developed a custom DLX microprocessor for testing purposes. Currently researching over the IEEE 1149.8.1-2012 standard for Boundary-Scan-Based Stimulus of Interconnections to Passive and/or Active Components by exploiting the test infrastructure to extract information and possible faults in the circuit.
+Software/Hardware Integration Lab (LISHA)
+Intern - Thesis Project</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://gabrielganzer.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabrielganzer.github.io/projects/</guid>
+      <description>DLX &amp;ndash; Microprocessor    This project consisted of developing a small DLX(DELUXE) processor from RTL design using ModelSim, synthesis&amp;amp;optimization with Synopsys Design Vision, down to the physical design using Cadence. The DLX is a fully pipelined RISC processor based on the Harvard Architecture, i.e., it relies on two different memories for instructions and data, allowing simultaneous instruction-fetching and data transactions. The features implemented are listed bellow:
+ Extended Instruction Set: addu, addui, jalr, jr, lb, lbu, lhi, lhu, sb, seq, seqi, sgeu, sgeui, sgt, sgti, sgtu, sgtui, slt, slti, sltu, sltui, sra, srai, subu, subui, mult; Optimized ALU: Pentium4 adder/subtractor, UltraSPARC T2 3-level Shifter, UltraSPARC T2 Logic Unit using 2-level NAND gates, Multi-purpose Comparator, Zero Detector, and a multiplier that combines both Wallace Tree and Booth approaches.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://gabrielganzer.github.io/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabrielganzer.github.io/publications/</guid>
+      <description>Evaluation of a Non-intrusive packet delivery monitoring service on Networks-on-Chip
+2020 International Journal of Advanced Engineering Research and Science (IJAERS)
+Gabriel Ganzer, Marcelo Daniel Berejuck
+Dedicated monitoring service without routing mitigation for Networks-on-Chip
+2019 IEEE 10th Latin American Symposium on Circuits &amp;amp; Systems (LASCAS)
+Gabriel Ganzer, Marcelo Daniel Berejuck</description>
+    </item>
+    
+    <item>
+      <title>Volunteering</title>
+      <link>https://gabrielganzer.github.io/volunteering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabrielganzer.github.io/volunteering/</guid>
+      <description>IEEE Student Volunteer Program
+Staff Support
+Dec/2020 - Feb/2021
+Arcigay &amp;ldquo;Ottavio Mai&amp;quot;​ Torino
+Event Coordinator
+Feb/2019 - Sep/2019
+SPEAK - Share your world!
+English/Portuguese Teacher
+Feb/2019 - May/2019
+Computer Engineering Student Association - CAEC
+Prime Secretary
+May/2016 - Apr/2017
+Academic Senate - UFSC
+Student Representative
+Sep/2015 - Apr/2017</description>
+    </item>
+    
+  </channel>
+</rss>

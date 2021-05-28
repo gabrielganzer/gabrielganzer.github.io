@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gabriel Ganzer</title>
+    <link>https://gabrielganzer.github.io/authors/gabriel-ganzer/</link>
+    <description>Recent content on Gabriel Ganzer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gabrielganzer.github.io/authors/gabriel-ganzer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How yoga helped me during the pandemic</title>
+      <link>https://gabrielganzer.github.io/posts/yoga/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabrielganzer.github.io/posts/yoga/</guid>
+      <description>How yoga helped me during the pandemic    </description>
+    </item>
+    
+  </channel>
+</rss>
