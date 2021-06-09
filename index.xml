@@ -43,9 +43,7 @@ Design and evaluation of a service for monitoring the delivery of data packets o
       <description>Laboratório de Sistemas Embarcados e Microeletrônica (LSEM)
 Researcher - External Collaboration
 Mar/2020 - Present
-Researched RISC-V architectures, optimization techniques for energy-efficient RTL designs, and fully developed a custom DLX microprocessor for testing purposes. Currently researching over the IEEE 1149.8.1-2012 standard for Boundary-Scan-Based Stimulus of Interconnections to Passive and/or Active Components by exploiting the test infrastructure to extract information and possible faults in the circuit.
-Software/Hardware Integration Lab (LISHA)
-Intern - Thesis Project</description>
+ Researched RISC-V architectures, optimization techniques for energy-efficient RTL designs, and hardware verification with C++. Fully developed in VHDL a custom DLX microprocessor optimized for energy efficiency and testing purposes. Currently researching over the IEEE 1149.8.1-2012 standard for Boundary-Scan-Based Stimulus of Interconnections to Passive and/or Active Components by exploiting the test infrastructure to extract information and possible faults in the circuit.</description>
     </item>
     
     <item>
@@ -54,8 +52,7 @@ Intern - Thesis Project</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gabrielganzer.github.io/projects/</guid>
-      <description>DLX &amp;ndash; Microprocessor    This project consisted of developing a small DLX(DELUXE) processor from RTL design using ModelSim, synthesis&amp;amp;optimization with Synopsys Design Vision, down to the physical design using Cadence. The DLX is a fully pipelined RISC processor based on the Harvard Architecture, i.e., it relies on two different memories for instructions and data, allowing simultaneous instruction-fetching and data transactions. The features implemented are listed bellow:
- Extended Instruction Set: addu, addui, jalr, jr, lb, lbu, lhi, lhu, sb, seq, seqi, sgeu, sgeui, sgt, sgti, sgtu, sgtui, slt, slti, sltu, sltui, sra, srai, subu, subui, mult; Optimized ALU: Pentium4 adder/subtractor, UltraSPARC T2 3-level Shifter, UltraSPARC T2 Logic Unit using 2-level NAND gates, Multi-purpose Comparator, Zero Detector, and a multiplier that combines both Wallace Tree and Booth approaches.</description>
+      <description>DLX &amp;ndash; Microprocessor    This project consisted of developing a small DLX(DELUXE) processor using Intel® ModelSim® for simulation, Synopsys® DC Ultra™ for synthesis, and Cadence® Innovus™ Implementation System for the physical layout. The DLX is a fully pipelined RISC processor based on the Harvard Architecture, i.e., it relies on two different memories for instructions and data, allowing simultaneous instruction-fetching and data transactions. The features implemented are listed bellow:</description>
     </item>
     
     <item>
