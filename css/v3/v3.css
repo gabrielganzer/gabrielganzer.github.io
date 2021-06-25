@@ -12,7 +12,7 @@ a:hover {
 /* v3 home */
 .name {
   padding-left: 3%;
-  border-left: 1.2px solid #5e17eb;
+  border-left: 1.2px solid #6610f2;
 }
 .hi-text {
   font-size: 20px;
@@ -38,7 +38,7 @@ a:hover {
 }
 .social-icon {
   padding: 2%;
-  background-color: #5e17eb;
+  background-color: #6610f2;
   color: #f9fafc !important;
   border-radius: 30%;
   transition: 0.3s;
@@ -46,8 +46,8 @@ a:hover {
 }
 .social-icon:hover {
   background-color: #f9fafc !important;
-  color: #5e17eb !important;
-  border: 1px solid #5e17eb;
+  color: #6610f2 !important;
+  border: 1px solid #6610f2;
 }
 .intro {
   padding: 8% 0 8% 0;
@@ -58,8 +58,8 @@ a:hover {
 .profile {
   padding: 1%;
   border: 1px solid #f9fafc;
-  width: 600px;
-  height: 500px;
+  width: 580px;
+  height: 440px;
 }
 .profile:hover {
   -webkit-filter: grayscale(0);
@@ -106,10 +106,10 @@ a:hover {
   padding-left: 2%;
   padding-right: 2%;
   font-size: 17px;
-  border: 1px solid #5e17eb;
+  border: 1px solid #6610f2;
 }
 .contact-btn:hover {
-  color: #5e17eb !important;
+  color: #6610f2 !important;
 }
 .progress {
   background-color: #f9fafc !important;
@@ -156,7 +156,7 @@ a:hover {
 
 }
 .pro:hover .pro-btn {
-  background-color: #3498db !important;
+  background-color: #6f42c1 !important;
   color: #f9fafc;
 }
 @media only screen and (max-width: 767px) {
@@ -178,10 +178,10 @@ a:hover {
   }
   .content-pro-top {
     height: 80%;
-    color: #2b2d2f;
+    color: #6c757d;
   }
   .card-text {
-    color: #ffc107;
+    color: #343a40;
   }
   .pro:hover .content-pro {
     background-color: transparent !important;
@@ -199,7 +199,7 @@ a:hover {
 #experience {
 }
 #nav-pills-out {
-  border-left: 1px solid #5e17eb;
+  border-left: 1px solid #6610f2;
 }
 .nav-pills .nav-link {
 }
@@ -213,7 +213,7 @@ a:hover {
   content: "▹";
   position: absolute;
   left: 0px;
-  color: #5e17eb;
+  color: #6610f2;
 }
 .tab-pane {
 }
@@ -228,7 +228,7 @@ a:hover {
   content: "▹";
   position: absolute;
   left: 0px;
-  color: #5e17eb;
+  color: #6610f2;
 }
 .ex-ol {
   list-style-type: decimal-leading-zero;
@@ -251,7 +251,7 @@ a:hover {
   content: "▹";
   position: absolute;
   left: 0px;
-  color: #5e17eb;
+  color: #6610f2;
 }
 @media only screen and (max-width: 768px) and (orientation: landscape) {
   .ex-ol {
@@ -324,7 +324,7 @@ a:hover {
   }
 }
 
-/* v3 achievements */
+/* v3 Achievements */
 .achiv-card:hover {
   filter: grayscale(100%);
 }
